@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Strona 2</title>
+  <style>
+    *{
+        box-sizing: border-box;
+    }
+ 
+    body{
+        margin: 0;
+        font-family: Arial;  
+        min-height: 100vh;     
+    }
+ 
+    ul{
+        list-style: none;
+        padding: 0;
+    }
+ 
+    li{
+        margin-bottom: 15px;
+    }
+    
+    header{
+        background: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    nav{
+        background: #555;
+        padding: 15px;
+        display: flex;  
+        justify-content: left;
+        gap: 20px;
+    }
+    nav a{
+        color: white;
+        text-decoration: none;
+    }
+ 
+    .container{
+        min-height: 200px;
+        width: 100%;
+    }
+    
+    .container2{
+        display: flex;
+        min-height: 400px;
+    }
+ 
+    aside {
+        width: 50%;
+        padding: 20px;
+    }
+ 
+    main {
+      width: 75%;
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+ 
+    footer{
+        background: #333;
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        text-align: center;
+    }
+ 
+    .oferty {
+    display: flex;           
+    justify-content: center; 
+    gap: 20px;               
+    flex-wrap: wrap;        
+    }
+ 
+    section {
+        padding: 40px;
+        text-align: center;
+        background: #ddd;
+    }
+ 
+ 
+    .offer1, .offer2, .offer3 {
+        background-color: #f4f4f4;
+        padding: 20px;
+        width: 20%;
+        margin-bottom: 20px;
+    }
+    
+ 
+    
+  </style>
+</head>
+<body>
+    <header>
+      <h1>MERITO</h1>
+    </header>
+    <nav>
+        <a href="#">Strona główna</a> 
+        <a href="#">O nas</a> 
+        <a href="#">Oferta</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+    <div class="container">
+        <section>
+            <h2>WITAJ NA NASZEJ STRONIE</h2>
+            <p>Krótka informacja o firmie Merito.</p>
+        </section>
+    </div>
+    <div class="container2">
+        <aside>
+            <h2>O nas</h2>
+            <p>Informacja o firmie</p>
+        </aside>
+        <main>
+            <h2>Nasza oferta</h2>
+            <div class="oferty">
+            <div class="offer1">
+                <p>Usługa 1</p>
+                </div>
+                <div class="offer2">
+                <p>Usługa 2</p>
+                </div>
+                <div class="offer3">
+                <p>Usługa 3</p>
+                </div>
+            </div>
+        </main>
+    </div>
+ 
+    <footer>
+        <p>Stopka strony</p>
+    </footer>
+ 
+</body>
+</html>
