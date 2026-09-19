@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - prosty układ strony</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #555;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            min-height: 400px;
+        }
+
+        aside {
+            width: 25%;
+            background: #ddd;
+            padding: 20px;
+        }
+
+        main {
+            width: 75%;
+            padding: 20px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Merito</h1>
+    </header>
+
+    <nav>
+        <a href="#">Strona główna</a>
+        <a href="#">O nas</a>
+        <a href="#">Oferta</a>
+        <a href="./1_contact.html">Kontakt</a>
+    </nav>
+
+    <div class="container">
+        <aside>
+            <h2>Menu boczne</h2>
+            <p>Link 1</p>
+            <p>Link 2</p>
+            <p>Link 3</p>
+        </aside>
+
+        <main>
+            <h2>Treść strony</h2>
+            <p>
+                To jest główna część strony
+            </p>
+        </main>
+    </div>
+
+    <footer>
+        Stopka strony
+    </footer>
+</body>
+</html>
